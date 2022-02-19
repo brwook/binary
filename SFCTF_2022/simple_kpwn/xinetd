@@ -1,0 +1,13 @@
+service simple_kpwn
+{
+    disable     = no
+    type        = UNLISTED
+    wait        = no
+    server 	    = /bin/bash
+    server_args = /chall/test.sh
+    socket_type = stream
+    protocol    = tcp
+    user        = root
+    port        = 1800
+    flags       = REUSE
+}
